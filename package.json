@@ -1,0 +1,20 @@
+{
+  "name": "kost-dw",
+  "version": "1.0.0",
+  "description": "Sistem Manajemen Kost sederhana + Data Warehouse (proyek latihan Workshop Data Warehouse)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/src/index.js",
+    "dev": "node --watch --env-file-if-exists=.env server/src/index.js",
+    "smoke": "node scripts/smoke_test.mjs"
+  },
+  "dependencies": {
+    "compression": "^1.8.2",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}
